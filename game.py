@@ -1,3 +1,10 @@
+"""
+Project-Individual Project
+Author-Lakshmi Prasanna
+File-game.py
+"""
+
+
 class Question:
     """
     A class to represent a yes/no question in the game.
@@ -177,7 +184,6 @@ def main():
                                                                                no_question=Question(
                                                                                    "Oops! Something went wrong! Try "
                                                                                    "again?")))))))
-
 
     # Create and start the game
     game = Game(q1)
