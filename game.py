@@ -83,7 +83,7 @@ class Game:
         """
         Starts the game by printing a message and asking the root question.
         """
-        # print("Start")
+        print("Start")
         self.ask_question(self.root_question)
 
     def ask_question(self, question):
@@ -142,6 +142,7 @@ def main():
                                  no_question=Question(
                                      "Does it explain how to assemble objects and classes into a larger structure and "
                                      "simplifies the structure by identifying the relationships?",
+
                                      yes_question=Question("Does it attach additional behaviour to object at run-time?",
                                                            yes_question=Question("Is it Decorator pattern?",
                                                                                  yes_question=Question(
@@ -154,7 +155,10 @@ def main():
                                                                                     "Woohoo! I guessed it! Try again?"),
                                                                                 no_question=Question(
                                                                                     "Oops! Something went wrong! Try "
-                                                                                    "again?")))),
+                                                                                    "again? "))),
+                                     no_question=Question(
+                                         "Oops! Something went wrong! "
+                                         "Try" "again?")),
                                  yes_question=Question(
                                      "Does it provide a mechanism to the context to change its behaviour?",
                                      yes_question=Question("Is changing behaviour built into its scheme?",
